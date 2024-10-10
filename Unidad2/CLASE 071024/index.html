@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <div class="calculator">
-        <input type="text" id="display" class="calculator-screen" value="" disabled>
+<body> <!--Estructura principal de la pagina-->
+    <div class="calculator"> <!--()-->
+        <input type="text" id="display" class="calculator-screen" value="" disabled> 
 
-        <div class="calculator-buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="deleteLast()">DEL</button>
-            <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay('*')">*</button>
+        <div class="calculator-buttons"> <!--contenedor en el cual va estar la calculadora-->
+            <button class="button" onclick="clearDisplay()">C</button> <!--boton para borrar todo-->
+            <button class="button" onclick="deleteLast()">DEL</button> <!--boton para borrar el ultimo digito-->
+            <button class="button" onclick="appendToDisplay('/')">/</button> <!--boton de division-->
+            <button class="button" onclick="appendToDisplay('*')">*</button> <!--(boton de multi-->
 
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button" onclick="appendToDisplay('-')">-</button>
+            <button class="button" onclick="appendToDisplay('7')">7</button> <!--(boton de 7 -->
+            <button class="button" onclick="appendToDisplay('8')">8</button> <!--boton de 8-->
+            <button class="button" onclick="appendToDisplay('9')">9</button> 
+            <button class="button" onclick="appendToDisplay('-')">-</button> 
 
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button" onclick="appendToDisplay('+')">+</button>
+            <button class="button" onclick="appendToDisplay('4')">4</button> 
+            <button class="button" onclick="appendToDisplay('5')">5</button> 
+            <button class="button" onclick="appendToDisplay('6')">6</button> 
+            <button class="button" onclick="appendToDisplay('+')">+</button> 
 
             <button class="button" onclick="appendToDisplay('1')">1</button>
             <button class="button" onclick="appendToDisplay('2')">2</button>
@@ -34,9 +34,9 @@
 
             <button class="button" onclick="appendToDisplay('0')">0</button>
             <button class="button" onclick="appendToDisplay('.')">.</button>
-        </div>
-    </div>
+        </div> 
+    </div> 
     
 
-</body>
+</body> 
 </html>
