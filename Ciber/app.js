@@ -39,7 +39,15 @@ app.get('/obtenerUsuario',(req,res)=>{
             console.log("Error al conectar", err);
             return res.status(500).send("Error al conectar");
         }
-       
+        if (respuesta.length === 0) {
+            return res.status(404).send("Ningun usuario resistrado");    
+        }
+
+        let resultadoHTML = "<h1>Usuarios</h1><ul>";
+
+        respuesta.forEach(usuario => {
+            resultadoHTML += `<li>ID: ${usuario.id}, Nombre: ${usuario.nombre}</li>`
+        });
         return res.json(respuesta)
     });
 
